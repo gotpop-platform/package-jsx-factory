@@ -1,6 +1,6 @@
 {
   "name": "@gotpop-platform/package-jsx-factory",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A JSX factory for creating JSX elements",
   "main": "src/index.ts",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:gotpop-platform/package-jsx-factory.git"
+    "url": "git+ssh://git@github.com/gotpop-platform/package-jsx-factory.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

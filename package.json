@@ -1,12 +1,12 @@
 {
   "name": "@gotpop-platform/package-jsx-factory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JSX factory for creating JSX elements",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
     "test": "echo \"No tests specified\" && exit 0",
-    "publishing": "dotenv npm publish"
+    "pub": "dotenv npm publish"
   },
   "repository": {
     "type": "git",

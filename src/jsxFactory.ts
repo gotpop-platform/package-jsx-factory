@@ -1,8 +1,8 @@
-export function jsxFactory(
-  type: string | Function,
-  props = {},
-  ...children: any
-) {
+export function jsxFactory(type: string | Function, props = {}, ...children: any) {
+  if (type === "Fragment") {
+    return Fragment(children) // Implement createFragment to handle children
+  }
+
   const selfClosingTags = [
     "meta",
     "img",
@@ -55,6 +55,8 @@ export function jsxFactory(
   }
 }
 
-export function Fragment(props: { children: any }) {
-  return props.children;
+export function Fragment({ children }: { children: any }) {
+  console.log("children :", children)
+
+  return (children || []).flat(Infinity).join("")
 }

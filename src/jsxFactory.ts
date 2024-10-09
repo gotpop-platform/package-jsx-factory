@@ -54,3 +54,7 @@ export function jsxFactory(
     return element
   }
 }
+
+export function Fragment(props: { children: any }) {
+  return props.children;
+}

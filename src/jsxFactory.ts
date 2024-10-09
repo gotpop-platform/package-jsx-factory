@@ -1,6 +1,6 @@
 export function jsxFactory(type: string | Function, props = {}, ...children: any) {
   if (type === "Fragment") {
-    return Fragment(children) // Implement createFragment to handle children
+    return (children || []).flat(Infinity).join("")
   }
 
   const selfClosingTags = [
@@ -55,8 +55,9 @@ export function jsxFactory(type: string | Function, props = {}, ...children: any
   }
 }
 
-export function Fragment({ children }: { children: any }) {
-  console.log("children :", children)
-
-  return (children || []).flat(Infinity).join("")
+export const Fragment = ({ children }: { children?: JSX.Element }): JSX.Element | null => {
+  if (children !== undefined) {
+    return children
+  }
+  return null
 }

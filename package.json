@@ -1,6 +1,6 @@
 {
   "name": "@gotpop-platform/package-jsx-factory",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A JSX factory for creating JSX elements",
   "main": "src/index.ts",
   "scripts": {
